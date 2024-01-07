@@ -2,7 +2,6 @@ target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
-/项目设计.md
 
 ### IntelliJ IDEA ###
 .idea/modules.xml
