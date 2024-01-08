@@ -25,4 +25,13 @@ public class SSTableTest {
         SSTable ssTable = SSTable.getInstanceFromSSTableFile("test.txt");
         System.out.println(ssTable.toString());
     }
+
+    @Test
+    public void query() {
+        SSTable ssTable = SSTable.getInstanceFromSSTableFile("test.txt");
+        System.out.println(ssTable.query("key0"));
+        System.out.println(ssTable.query("key5"));
+        System.out.println(ssTable.query("key9"));
+        System.out.println(ssTable.query("key100"));
+    }
 }
